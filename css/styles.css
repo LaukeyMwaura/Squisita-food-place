@@ -1,0 +1,14 @@
+body {
+    background-image: url(../img/background.jpg);
+}
+
+.text {
+    color: white;
+}
+
+.logo {}
+
+.name {
+    color: white;
+    font-family: 'Indie Flower', ;
+}
