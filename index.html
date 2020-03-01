@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SQUISITA</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Yeon+Sung&display=swap" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -12,33 +13,153 @@
 </head>
 
 <body>
-    <img src="/img/logo.png" class="logo">
-    <h1 class="name">SQUISITA</h1>
-    <h2 class="text">SIZES</h2>
-    <p class="text">Our pizzas come in different sizes but the taste is still the best</p>
-    <img src="img/sizes.png"><br>
-    <p class="text">This are basically our sizes</p>
-    <img src="img/small.jpeg">br
-    <p class="text">It has been cut into 6 slices</p>
-    <img src="img/medium.jpeg"><br>
-    <p class="text">It has been cut into 8 slices</p>
-    <img src="img/large.jpeg">
-    <p class="text">It has been cut into 10 slices</p>
-    <img src="img/x-large.webp">
-    <p class="text">It has been cut into 12 slices</p>
-    <h1 class="text">Please choose the type of crust you want</h1>
-    <img src="img/crusty.jpg" width="500px"><br>
-    <p class="text">Crispy squisita crust</p>
-    <img src="img/stuffedcrust.jpg" width="500px"><br>
-    <p class="text">Stuffed squisita crust</p>
-    <img src="img/glutenfree.jpg" width="500px"><br>
-    <p class="text">Glutenfree squisita crust</p>
+    <img src="img/logo.png" width="25%" id="logo">
+    <h1 class="name" id="sq">SQUISITA</h1>
+    <p class="text" id="motto">Our pizzas come in different sizes but the taste is still the best</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2 class="text">SIZES</h2>
+                <img class="link1" src="img/sizes.png"><br>
+                <button class="link1" onclick="show()">Click here to choose your size.</button>
+                <div class="container" id="hide1">
+                    <div class="row" class="show1">
+                        <div class="col-sm-6">
+                            <img class="size" src="img/small.jpeg" width="auto">
+                            <p class="text">It has been cut into 6 slices</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <img class="size" src="img/medium.jpeg"><br>
+                            <p class="text">It has been cut into 8 slices</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <img class="size" src="img/large.jpeg">
+                            <p class="text">It has been cut into 10 slices</p>
+                        </div>
+                        <div class="col-sm-6">
+                            <img class="size" src="img/x-large.webp">
+                            <p class="text">It has been cut into 12 slices</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h2 class="text">CRUSTS</h2>
+                <img src="img/crust.jpg" height="180px" width="300px"><br>
+                <p class="text">Click here to choose your crust.</p>
+                <div class="container" id="hide2">
+                    <h5 class="text">Please choose the type of crust you want</h5>
+                    <img class="size" src="img/crusty.jpg" width="500px"><br>
+                    <p class="text">Crispy squisita crust</p>
+                    <img class="size" src="img/stuffedcrust.jpg" width="500px"><br>
+                    <p class="text">Stuffed squisita crust</p>
+                    <img class="size" src="img/glutenfree.jpg" width="500px"><br>
+                    <p class="text">Glutenfree squisita crust</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <h2 class="text">TOPPINGS</h2>
+                <img src="img/toppings.jpeg" height="180px">
+                <p class="text">Click here to choose your toppings.</p>
+                <div class="container" id="hide3">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="size" src="img/hawaaian.jpg"><br>
+                            <p class="text">Hawaaian top</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img class="size" src="img/olivetop.jpeg"><br>
+                            <p class="text">Olives on top</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="size" src="img/pepperonitop.jpg"><br>
+                            <p class="text">Pepper on top</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img class="size" src="img/tomato.jpeg"><br>
+                            <p class="text">It has tomatoes on the top</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="checkout-panel">
+        <div class="panel-body">
+            <h2 class="title">Checkout</h2>
+
+            <div class="progress-bar">
+                <div class="step active"></div>
+                <div class="step active"></div>
+                <div class="step"></div>
+                <div class="step"></div>
+            </div>
+
+            <div class="payment-method">
+                <label for="card" class="method card">
+              <div class="card-logos">
+                <img src="img/visa.png"/>
+                <img src="img/master.png"/>
+              </div>
+       
+              <div class="radio-input">
+                <input id="card" type="radio" name="payment">
+                Pay £340.00 with credit card
+              </div>
+            </label>
+
+                <label for="paypal" class="method paypal">
+              <img src="img/paypal.png"/>
+              <div class="radio-input">
+                <input id="paypal" type="radio" name="payment">
+                Pay £340.00 with PayPal
+              </div>
+            </label>
+            </div>
+
+            <div class="input-fields">
+                <div class="column-1">
+                    <label for="cardholder">Cardholder's Name</label>
+                    <input type="text" id="cardholder" />
+
+                    <div class="small-inputs">
+                        <div>
+                            <label for="date">Valid thru</label>
+                            <input type="text" id="date" placeholder="MM / YY" />
+                        </div>
+
+                        <div>
+                            <label for="verification">CVV / CVC *</label>
+                            <input type="password" id="verification" />
+                        </div>
+                    </div>
+
+                </div>
+                <div class="column-2">
+                    <label for="cardnumber">Card Number</label>
+                    <input type="password" id="cardnumber" />
+
+                    <span class="info">* CVV or CVC is the card security code, unique three digits number on the back of your card separate from its number.</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel-footer">
+            <button class="btn back-btn">Back</button>
+            <button class="btn next-btn">Next Step</button>
+        </div>
+    </div> -->
+
 
 
 
     <script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
     <script type="text/javascript">
-        window.dojoRgequire(["mojo/signup-forms/Loader"], function(L) {
+        window.dojoRequire(["mojo/signup-forms/Loader"], function(L) {
             L.start({
                 "baseUrl": "mc.us4.list-manage.com",
                 "uuid": "281b210b02fb14104bc36bb38",
