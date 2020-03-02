@@ -1,17 +1,17 @@
-function show() {
-    var s = document.getElementById("hide1");
-    if (s.style.display === "none") {
-        s.style.display = "block";
-    } else {
-        s.style.display = "none";
-    }
-}
-}
-$(document).ready(function() {
-    $("button").click(function() {
-        $(".hide1").show(fast);
-    });
-});
+// function show() {
+//     var s = document.getElementById("hide1");
+//     if (s.style.display === "none") {
+//         s.style.display = "block";
+//     } else {
+//         s.style.display = "none";
+//     }
+// }
+// }
+// $(document).ready(function() {
+//     $("button").click(function() {
+//         $(".hide1").show(fast);
+//     });
+// });
 // $(".showing1").click(function() {
 // $(".showing1").fadeOut();
 // $(".design").fadeIn();

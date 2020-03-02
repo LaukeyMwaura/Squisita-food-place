@@ -68,6 +68,17 @@ body {
     display: none;
 }
 
+.date {
+    padding-top: 50px;
+}
+
+.icons {
+    padding-top: 30px;
+    text-align: center;
+}
+
+
+/* 
 * {
     box-sizing: border-box;
 }
@@ -365,4 +376,4 @@ input[type='password']:focus {
 
 .warning {
     border-color: #f62f5e;
-}
+} */
