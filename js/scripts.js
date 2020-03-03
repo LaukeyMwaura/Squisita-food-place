@@ -1,37 +1,135 @@
 $(document).ready(function() {
-    $(".link1").click(function() {
-        $(".link1").hide();
-        $(".hide1").show();
+    $("table").hide();
+    $(".additional-buttons").hide();
+    $(".additional-info").hide();
+    $(".btn.yes").hide();
+    $(".btn.no").hide();
+    $(".additional-info h4").hide();
+
+    $('.btn.order').click(function() {
+        var sizeOfPizza = $(".size option:selected").val();
+        var toppingsOfPizza = $(".toppings option:selected").val();
+        var crustOfPizza = $(".crust option:selected").val();
+        var total = parseInt(sizeOfPizza) + parseInt(toppingsOfPizza) + parseInt(crustOfPizza);
+        var order = 1;
+        var grandTotal = 0;
+
+        $("table").show();
+        $(".additional-buttons").show();
+        $(".btn.order").hide();
+
+        $("#size").html($(".size option:selected").text() + " - " + sizeOfPizza);
+        $("#toppings").html($(".toppings option:selected").text() + " - " + toppingsOfPizza);
+        $("#crust").html($(".crust option:selected").text() + " - " + crustOfPizza);
+        $("#total").html(total);
+
+        function Pizza(size, toppings, crust, total, orderNo) {
+            this.size = size;
+            this.toppings = toppings;
+            this.crust = crust;
+            this.total = total;
+            this.orderNo = orderNo;
+        }
+
+        $('.btn.add-pizza').click(function() {
+            var sizeOfPizza = $(".size option:selected").val();
+            var toppingsOfPizza = $(".toppings option:selected").val();
+            var crustOfPizza = $(".crust option:selected").val();
+            var total = parseInt(sizeOfPizza) + parseInt(toppingsOfPizza) + parseInt(crustOfPizza);
+            order = order + 1;
+            grandTotal = grandTotal + total;
+
+
+            var newPizza = new Pizza(sizeOfPizza, toppingsOfPizza, crustOfPizza, total, order);
+
+            var newRow = '<tr><th scope="row">' + newPizza.orderNo + '</th><td id="size">' + $(".size option:selected").text() + " - " + newPizza.size + '</td><td id="toppings">' + $(".toppings option:selected").text() + " - " + newPizza.toppings + '</td><td id="crust">' + $(".crust option:selected").text() + " - " + newPizza.crust + '</td><td id="total">' + newPizza.total + '</td></tr>'
+
+            $("#pizza").append(newRow);
+        });
+
+        $(".btn.check-out").click(function() {
+            $(".btn.add-pizza").hide();
+            $(".btn.check-out").hide();
+            $(".additional-info").show();
+            $(".btn.yes").show();
+            $(".btn.no").show();
+            $(".additional-info .location").hide();
+            grandTotal = grandTotal + total;
+
+            $(".additional-info h3 span").html(grandTotal);
+        });
+
+
+        $(".btn.yes").click(function() {
+            $(".additional-info h5").hide();
+            $(".btn.yes").hide();
+            $(".btn.no").hide();
+            $(".additional-info .location").show();
+            $(".additional-info h3 span").html(grandTotal + 100);
+        });
+
+        $(".btn.no").click(function() {
+            $(".additional-info h5").hide();
+            $(".btn.yes").hide();
+            $(".btn.no").hide();
+            $(".additional-info #no").show();
+        });
+        $(".btn.complete").click(function() {
+            var location = $(".additional-info .location input").val();
+            if (document.getElementById("name") == "") {
+                alert("input a location");
+            } else {
+                $(".additional-info #yes").show();
+                $(".additional-info .location").hide();
+                $(".additional-info #yes span").html(location);
+
+
+            }
+        });
+        event.preventDefault();
     });
-    $(".hide1").click(function() {
-        $(".hide1").hide();
-        $(".link1").show();
-    });
-    $(".link2").click(function() {
-        $(".link2").hide();
-        $(".hide2").show();
-    });
-    $(".hide2").click(function() {
-        $(".hide2").hide();
-        $(".link2").show();
-    });
-    $(".link3").click(function() {
-        $(".link3").hide();
-        $(".hide3").show();
-    });
-    $(".hide3").click(function() {
-        $(".hide3").hide();
-        $(".link3").show();
-    });
+
 });
 
-function submit(name) {
-    var name = document.getElementById("left").value;
-    if (name === "") {
-        alert("Invalid input.Please enter you name correctly");
-    } else {
-        alert(name + ", Thank you message received!😁");
-    }
 
 
-}
+
+
+
+// $(document).ready(function() {
+//     $(".link1").click(function() {
+//         $(".link1").hide();
+//         $(".hide1").show();
+//     });
+//     $(".hide1").click(function() {
+//         $(".hide1").hide();
+//         $(".link1").show();
+//     });
+//     $(".link2").click(function() {
+//         $(".link2").hide();
+//         $(".hide2").show();
+//     });
+//     $(".hide2").click(function() {
+//         $(".hide2").hide();
+//         $(".link2").show();
+//     });
+//     $(".link3").click(function() {
+//         $(".link3").hide();
+//         $(".hide3").show();
+//     });
+//     $(".hide3").click(function() {
+//         $(".hide3").hide();
+//         $(".link3").show();
+//     });
+// });
+
+// function submit(name) {
+//     var name = document.getElementById("left").value;
+//     if (name === "") {
+//         alert("Invalid input.Please enter you name correctly");
+//     } else {
+//         alert(name + ", Thank you message received!😁");
+//     }
+
+
+// }
