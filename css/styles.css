@@ -77,3 +77,9 @@ body {
 .us {
     background-image: url(/img/au.jpeg);
 }
+
+.but {
+    text-align: center;
+    font-size: 19px;
+    background-color: grey;
+}
