@@ -14,9 +14,18 @@ This is a web application for Squisita which means Sweet in Italiano. It allows 
 Victor Mburu Mwaura-Lead Web developer
 
 ## BDD
-![this is a pictorial representation of the hover function](https://github.com/LaukeyMwaura/Delani-Studio/blob/master/img/s.png?raw=true)
+![ABOUT PAGE](https://raw.githubusercontent.com/LaukeyMwaura/Squisita-food-place/master/img/about.png)
 
-![This is a pictorial  representation of the on click function](https://github.com/LaukeyMwaura/Delani-Studio/blob/master/img/ss.png)
+![CONTACT PAGE](https://raw.githubusercontent.com/LaukeyMwaura/Squisita-food-place/master/img/contact.png)
+
+![HOME PAGE](https://raw.githubusercontent.com/LaukeyMwaura/Squisita-food-place/master/img/home.png)
+
+
+![ORDER PAGE](https://raw.githubusercontent.com/LaukeyMwaura/Squisita-food-place/master/img/order.png)
+
+![UNHOVERED ORDER PAGE](https://raw.githubusercontent.com/LaukeyMwaura/Squisita-food-place/master/img/order2.png)
+
+
 # Setup instructions 
 1.Fork the repository
 
