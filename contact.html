@@ -5,20 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link href="css/styles.css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/scripts.js"></script>
 </head>
 
 <body style="background-image: url(/img/con.jpeg);">
-    <div class="last" style="text-align: center;" style="color:beige;">
-        <h1>CONTACT US</h1>
-        <div class="form-group">
-            <input id="left" class="left" type="text" placeholder="Name" required size="20">
-            <input id="left" class="right" type="email" placeholder="Email" required size="35">
-            <br><br>
-            <textarea rows="10" cols="60" type="text" name="description" placeholder="Enter your message here"></textarea>
-            <button style="color: chartreuse;" onclick="submit()">Submit</button>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About-Us.html">About us</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+        </ul>
+    </nav>
+    <div id="contacts">
+        <div class="last" style="text-align: center;" style="color:beige;">
+            <h1>CONTACT US</h1>
+            <div class="form-group">
+                <input id="left" class="left" type="text" placeholder="Name" required size="20">
+                <input id="left" class="right" type="email" placeholder="Email" required size="35">
+                <br><br>
+                <textarea rows="10" cols="60" type="text" name="description" placeholder="Enter your message here"></textarea>
+                <button style="color: chartreuse;" onclick="submit()">Submit</button>
+            </div>
         </div>
+    </div>
 </body>
 
 </html>
