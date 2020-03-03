@@ -24,3 +24,12 @@ $(document).ready(function() {
         $(".link3").show();
     });
 });
+
+function submit(name) {
+    var name = document.getElementById("left").value;
+    if (name === "") {
+        alert("Invalid input.Please enter you name correctly");
+    } else {
+        alert(name + ", Thank you message received!😁");
+    }
+}
