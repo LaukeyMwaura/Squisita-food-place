@@ -1,9 +1,11 @@
 # SQUISITA PIZZA PLACE
 
-#### This is My profile if you need a web Developer, 29/02/2020
-"https://github.com/LaukeyMwaura/Delani-Studio"
+#### This is My profile if you need a web Developer, 4/03/2020
+"https://github.com/LaukeyMwaura/Squisita-food-place"
+This is the link tp the repository
 
-"https://laukeymwaura.github.io/Delani-Studio/"
+"https://laukeymwaura.github.io/Squisita-food-place/"
+This is the link to the live page
 
 ## Description
 This is a web application for Squisita which means Sweet in Italiano. It allows the user to choose the size , topping and the crust.This is taken in and a total amount is gotten.Payment is also availablr via online methods.
