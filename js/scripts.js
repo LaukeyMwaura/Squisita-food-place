@@ -93,9 +93,6 @@ $(document).ready(function() {
 
 
 
-
-
-
 // $(document).ready(function() {
 //     $(".link1").click(function() {
 //         $(".link1").hide();

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pizzaria Parlor</title>
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="bootstrap" href="css/bootstrap.css">
+    <script src="js/scripts.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <header class="showcase">
+            <div class="content">
+
+                <img src="https://media.tenor.com/images/05ad1aa6af982480e46cc95d5c2d7d24/tenor.gif" alt="logo" width="150px" height="150px">
+                <div class="title">
+                    WELCOME TO MOONGUY PIZZA </div>
+                <div class="text">
+
+                </div>
+            </div>
+
+        </header>
+        <div class="cafe">
+            <h1 class="big">The tastiest Pizza in town.</h1>
+            <p><strong>What can we get you today?</strong></p>
+
+        </div>
+        <div class="jumbotron">
+
+
+            <div class="services">
+                <div class="row">
+                    <div class="col-md-4">
+
+                        <br>
+                        <h3>Size</h3>
+                        <select class="form-control size">
+                            <option label="Small" value="500">Small </option>
+                            <option label="Medium" value="700">Medium</option>
+                            <option label="Large" value="1000">Large</option>
+                            <option label="X-large" value="1200">X-large</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+
+                        <br>
+                        <h3>Toppings</h3>
+                        <select class="form-control toppings">
+                            <option label="Olives" value="100">Olives</option>
+                            <option label="Cheese" value="50">Cheese</option>
+                            <option label="Pepperoni" value="80">Pepperoni</option>
+                            <option label="bacon" value="80">Bacon</option>
+                            <option label="chicken" value="70">Chicken</option>
+                            <option label="beef" value="60">Beef</option>
+                            <option label="veggie" value="70">Veggie</option>
+                            <option label="hawaiian" value="100">Hawaiian</option>
+                        </select>
+                    </div>
+                    <div class="col-md-4">
+
+                        <br>
+                        <h3>Crust</h3>
+                        <select class="form-control crust">
+                            <option label="Stuffed" value="400">Stuffed</option>
+                            <option label="Gluten-Free" value="300">Gluten-Free</option>
+                            <option label="Crispy" value="500">Crispy</option>
+                            <option label="normal" value="200">Normal</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="text-center mt-5">
+                    <button class="btn btn-info order" type="submit">Order</button>
+                </div>
+                <table class="table mt-5">
+                    <thead>
+                        <tr>
+                            <th scope="col">Pizza size</th>
+                            <th scope="col">Order No.</th>
+                            <th scope="col">Toppings</th>
+                            <th scope="col">Crust</th>
+                            <th scope="col">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="pizza">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td id="size"></td>
+                            <td id="toppings"></td>
+                            <td class="crust"></td>
+                            <td class="total"></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="additional-buttons">
+                    <div class="text-center">
+                        <button class="btn btn-info add-pizza" type="submit">Add Another</button>
+                        <div class="additional-info">
+                            <h3>The total is: <span></span></h3>
+                            <h5> Do you want delivery?.... it costs an additional <em>100</em></h5>
+                            <h4 id="no">Your order will be ready after 10 minutes and you can pick it in moringa school.
+                            </h4>
+                            <h4 id="yes">Your order has been received! We are dispatching our rider to <span></span>
+                            </h4>
+                            <div class="location text-center">
+                                <input type="text" size="30" id="name" placeholder="Where do you live?" />
+                                <button class="btn btn-info complete" type="submit">Complete</button>
+                            </div>
+                        </div>
+                        <br>
+                        <button class="btn btn-info yes" type="submit">Yes</button>
+                        <button class="btn btn-info no" type="submit">No</button>
+                    </div>
+                    <div class="text-center pt-4">
+                        <button class="btn btn-info check-out" type="submit">Checkout</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</html>
